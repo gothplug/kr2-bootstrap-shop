@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Беспроводные наушники AirBeat — TechNest</title>
+  <meta name="description" content="Страница товара учебного магазина TechNest: описание, характеристики, комплектация, доставка и оформление заявки.">
+  <meta name="theme-color" content="#0d6efd">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TechNest">
+  <meta property="og:title" content="Беспроводные наушники AirBeat — TechNest">
+  <meta property="og:description" content="Страница товара учебного магазина TechNest: описание, характеристики, комплектация, доставка и оформление заявки.">
+  <meta property="og:url" content="https://gothplug.github.io/kr2-bootstrap-shop/product.html">
+  <meta property="og:image" content="https://gothplug.github.io/kr2-bootstrap-shop/images/og-preview.png">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <!-- Bootstrap подключён локально из vendor/bootstrap/, custom.css — после него -->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Тема применяется до отрисовки страницы, чтобы не было «мигания» -->
+  <script src="js/theme.js"></script>
+</head>
+<body>
+  <a class="visually-hidden-focusable position-absolute top-0 start-0 m-2 btn btn-light z-3" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg bg-body border-bottom" aria-label="Основная навигация">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+          <img src="images/favicon.svg" alt="" width="32" height="32">
+          TechNest
+        </a>
+
+        <div class="d-flex align-items-center gap-2 order-lg-last ms-lg-3">
+          <button class="btn btn-outline-secondary btn-icon js-theme-toggle" type="button"
+                  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Сменить тему"
+                  aria-label="Сменить тему оформления">
+            <svg class="icon theme-icon theme-icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon theme-icon theme-icon--sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          </button>
+          <button class="btn btn-primary btn-icon position-relative" type="button"
+                  data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas"
+                  aria-label="Открыть корзину">
+            <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-danger js-cart-count d-none">0</span>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                  aria-controls="mainNav" aria-expanded="false" aria-label="Открыть меню">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="catalog.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">Каталог</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="catalog.html">Все товары</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="catalog.html?category=audio">Аудио</a></li>
+                <li><a class="dropdown-item" href="catalog.html?category=wearables">Носимые устройства</a></li>
+                <li><a class="dropdown-item" href="catalog.html?category=peripherals">Периферия</a></li>
+                <li><a class="dropdown-item" href="catalog.html?category=accessories">Аксессуары</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="catalog.html?only=new">Новинки</a></li>
+                <li><a class="dropdown-item" href="catalog.html?only=sale">Со скидкой</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="order.html">Заявка</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+          </ul>
+
+          <form class="mb-2 mb-lg-0" action="catalog.html" method="get" role="search">
+            <div class="input-group">
+              <span class="input-group-text"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></span>
+              <input class="form-control" type="search" name="q" placeholder="Поиск товаров" aria-label="Поиск товаров">
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <nav class="container pt-4" aria-label="Хлебные крошки">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumb-item"><a href="catalog.html" data-field="breadcrumb-0">Каталог</a></li>
+        <li class="breadcrumb-item"><a href="catalog.html?category=audio" data-field="breadcrumb-1">Аудио</a></li>
+        <li class="breadcrumb-item active" aria-current="page" data-field="breadcrumb-current">Беспроводные наушники AirBeat</li>
+      </ol>
+    </nav>
+
+  <main id="main" class="container py-4">
+    <div class="alert alert-warning alert-dismissible fade show d-none" id="productNotFound" role="alert">
+      Товар по этой ссылке не найден, поэтому показан товар из каталога.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Закрыть"></button>
+    </div>
+
+    <article class="row g-4 g-lg-5 mb-5" aria-labelledby="productTitle">
+      <div class="col-12 col-lg-6">
+        <div class="card shadow-sm overflow-hidden position-relative product-gallery">
+          <img class="img-fluid w-100" data-field="image" src="images/products/headphones.svg" alt="Беспроводные наушники AirBeat" width="600" height="400">
+          <div class="position-absolute top-0 start-0 m-3 d-flex gap-2" data-field="badges">
+            <span class="badge text-bg-danger fs-6">Хит</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <p class="mb-2"><a class="badge text-bg-light border text-decoration-none" data-field="category" href="catalog.html?category=audio">Аудио</a></p>
+        <h1 class="h2 mb-2" id="productTitle" data-field="name">Беспроводные наушники AirBeat</h1>
+        <p class="mb-3 small">
+          <span class="text-warning" aria-hidden="true">★</span>
+          <span data-field="rating">4,8</span>
+          <span class="text-body-secondary">· <span data-field="reviews">124 отзыва</span> · Артикул <span data-field="sku">TN-0001</span></span>
+        </p>
+        <p class="text-body-secondary" data-field="short">Полноразмерные наушники с шумоподавлением и 40 часами работы.</p>
+
+        <div class="d-flex flex-wrap align-items-baseline gap-3 mb-2">
+          <span class="display-6 fw-bold" data-field="price">5 990 ₽</span>
+          <del class="text-body-secondary fs-5 d-none" data-field="old-price"></del>
+        </div>
+        <p class="mb-4"><span class="badge text-bg-success" data-field="stock">В наличии: 12 шт.</span></p>
+
+        <div class="row g-2 align-items-stretch mb-3">
+          <div class="col-12 col-sm-5 col-md-4">
+            <label class="visually-hidden" for="productQty">Количество</label>
+            <div class="input-group">
+              <button class="btn btn-outline-secondary js-qty-minus" type="button" aria-label="Уменьшить количество">−</button>
+              <input class="form-control text-center" id="productQty" type="number" value="1" min="1" max="12" inputmode="numeric">
+              <button class="btn btn-outline-secondary js-qty-plus" type="button" aria-label="Увеличить количество">+</button>
+            </div>
+          </div>
+          <div class="col-12 col-sm-7 col-md-8 d-grid">
+            <button class="btn btn-primary js-product-add" type="button" data-product-id="1"><svg class="icon me-1" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> В корзину</button>
+          </div>
+        </div>
+        <div class="d-flex flex-wrap gap-2 mb-4">
+          <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#quickOrderModal" data-product-id="1" data-field="quick-order">Быстрый заказ</button>
+          <a class="btn btn-success" href="order.html?product=1" data-field="order-link">Оформить заявку</a>
+          <a class="btn btn-outline-secondary" href="catalog.html">Вернуться в каталог</a>
+        </div>
+
+        <ul class="list-group list-group-horizontal-md small">
+          <li class="list-group-item flex-fill d-flex gap-2 align-items-center"><svg class="icon text-primary flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg> Доставка 1–2 дня</li>
+          <li class="list-group-item flex-fill d-flex gap-2 align-items-center"><svg class="icon text-primary flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg> Гарантия</li>
+          <li class="list-group-item flex-fill d-flex gap-2 align-items-center"><svg class="icon text-primary flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M1 4v6h6"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg> Возврат 14 дней</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Вкладки с подробной информацией -->
+    <section class="mb-5" aria-label="Подробная информация о товаре">
+      <ul class="nav nav-tabs" id="productTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="tab-description" data-bs-toggle="tab" data-bs-target="#pane-description" type="button" role="tab" aria-controls="pane-description" aria-selected="true">Описание</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab-specs" data-bs-toggle="tab" data-bs-target="#pane-specs" type="button" role="tab" aria-controls="pane-specs" aria-selected="false">Характеристики</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab-kit" data-bs-toggle="tab" data-bs-target="#pane-kit" type="button" role="tab" aria-controls="pane-kit" aria-selected="false">Комплектация</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab-delivery" data-bs-toggle="tab" data-bs-target="#pane-delivery" type="button" role="tab" aria-controls="pane-delivery" aria-selected="false">Доставка</button>
+        </li>
+      </ul>
+      <div class="tab-content border border-top-0 rounded-bottom p-3 p-md-4">
+        <div class="tab-pane fade show active" id="pane-description" role="tabpanel" aria-labelledby="tab-description" tabindex="0">
+          <p class="mb-0" data-field="description">AirBeat подходят для учёбы, работы и дороги: активное шумоподавление убирает фоновый шум, а мягкие амбушюры не давят даже после нескольких часов использования. Наушники складываются и помещаются в чехол из комплекта.</p>
+        </div>
+        <div class="tab-pane fade" id="pane-specs" role="tabpanel" aria-labelledby="tab-specs" tabindex="0">
+          <div class="table-responsive">
+            <table class="table table-striped table-hover align-middle mb-0">
+              <caption>Основные параметры товара</caption>
+              <tbody data-field="specs">
+              <tr><th scope="row">Артикул</th><td>TN-0001</td></tr>
+              <tr><th scope="row">Категория</th><td>Аудио</td></tr>
+              <tr><th scope="row">Тип</th><td>полноразмерные, закрытые</td></tr>
+              <tr><th scope="row">Подключение</th><td>Bluetooth 5.3, кабель 3,5 мм</td></tr>
+              <tr><th scope="row">Время работы</th><td>до 40 ч</td></tr>
+              <tr><th scope="row">Шумоподавление</th><td>активное (ANC)</td></tr>
+              <tr><th scope="row">Вес</th><td>250 г</td></tr>
+              <tr><th scope="row">Гарантия</th><td>12 месяцев</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pane-kit" role="tabpanel" aria-labelledby="tab-kit" tabindex="0">
+          <ul class="list-group list-group-flush" data-field="kit">
+              <li class="list-group-item d-flex gap-2"><span class="text-success" aria-hidden="true">✓</span> Наушники</li>
+              <li class="list-group-item d-flex gap-2"><span class="text-success" aria-hidden="true">✓</span> Чехол для хранения</li>
+              <li class="list-group-item d-flex gap-2"><span class="text-success" aria-hidden="true">✓</span> Кабель USB-C</li>
+              <li class="list-group-item d-flex gap-2"><span class="text-success" aria-hidden="true">✓</span> Аудиокабель 3,5 мм</li>
+              <li class="list-group-item d-flex gap-2"><span class="text-success" aria-hidden="true">✓</span> Инструкция</li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="pane-delivery" role="tabpanel" aria-labelledby="tab-delivery" tabindex="0">
+          <div class="table-responsive">
+            <table class="table align-middle">
+              <caption>Тарифы доставки</caption>
+              <thead>
+                <tr><th scope="col">Способ</th><th scope="col">Срок</th><th scope="col">Стоимость</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Самовывоз</td><td>в день заявки</td><td><span class="badge text-bg-success">бесплатно</span></td></tr>
+                <tr><td>Курьер по городу</td><td>1–2 дня</td><td>300 ₽</td></tr>
+                <tr><td>Доставка по региону</td><td>3–5 дней</td><td>600 ₽</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="alert alert-info mb-0" role="note">
+            <strong>Условия возврата.</strong> Товар можно вернуть в течение 14 дней после получения,
+            если сохранены упаковка и комплектация.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="similarTitle">
+      <h2 class="h4 mb-4" id="similarTitle">Похожие товары</h2>
+      <div class="row g-4" id="similarProducts">
+      <div class="col-12 col-sm-6 col-lg-4 js-product-col" data-id="3">
+        <article class="card h-100 shadow-sm product-card">
+          <a class="product-card__media" href="product.html?id=3" tabindex="-1" aria-hidden="true">
+            <img class="card-img-top" src="images/products/speaker.svg" alt="" width="600" height="400" loading="lazy">
+          </a>
+          <span class="badge text-bg-warning position-absolute top-0 start-0 m-3">Скидка</span>
+          <span class="badge text-bg-dark position-absolute top-0 end-0 m-3">−19%</span>
+          <div class="card-body d-flex flex-column">
+            <p class="small text-body-secondary mb-1">Аудио</p>
+            <h3 class="card-title h6"><a class="link-body-emphasis text-decoration-none product-card__link" href="product.html?id=3">Портативная колонка Boom Mini</a></h3>
+            <p class="card-text small text-body-secondary">Компактная колонка с защитой от воды и мощным басом.</p>
+            <p class="small mb-3"><span class="text-warning" aria-hidden="true">★</span> 4,5 <span class="text-body-secondary">· 203 отзыва</span></p>
+            <div class="mt-auto d-flex align-items-baseline gap-2 mb-3">
+              <span class="fs-5 fw-bold">3 490 ₽</span>
+            <del class="text-body-secondary small">4 290 ₽</del>
+            </div>
+            <div class="d-flex gap-2">
+              <button class="btn btn-primary flex-grow-1 js-add-to-cart" type="button" data-product-id="3">В корзину</button>
+              <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#quickOrderModal" data-product-id="3">Заказать</button>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 js-product-col" data-id="2">
+        <article class="card h-100 shadow-sm product-card">
+          <a class="product-card__media" href="product.html?id=2" tabindex="-1" aria-hidden="true">
+            <img class="card-img-top" src="images/products/smartwatch.svg" alt="" width="600" height="400" loading="lazy">
+          </a>
+          <span class="badge text-bg-success position-absolute top-0 start-0 m-3">Новинка</span>
+          <div class="card-body d-flex flex-column">
+            <p class="small text-body-secondary mb-1">Носимые устройства</p>
+            <h3 class="card-title h6"><a class="link-body-emphasis text-decoration-none product-card__link" href="product.html?id=2">Умные часы Pulse S</a></h3>
+            <p class="card-text small text-body-secondary">AMOLED-экран, пульсометр, GPS и уведомления со смартфона.</p>
+            <p class="small mb-3"><span class="text-warning" aria-hidden="true">★</span> 4,6 <span class="text-body-secondary">· 58 отзывов</span></p>
+            <div class="mt-auto d-flex align-items-baseline gap-2 mb-3">
+              <span class="fs-5 fw-bold">8 990 ₽</span>
+            </div>
+            <div class="d-flex gap-2">
+              <button class="btn btn-primary flex-grow-1 js-add-to-cart" type="button" data-product-id="2">В корзину</button>
+              <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#quickOrderModal" data-product-id="2">Заказать</button>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 js-product-col" data-id="9">
+        <article class="card h-100 shadow-sm product-card">
+          <a class="product-card__media" href="product.html?id=9" tabindex="-1" aria-hidden="true">
+            <img class="card-img-top" src="images/products/fitness-band.svg" alt="" width="600" height="400" loading="lazy">
+          </a>
+          <span class="badge text-bg-danger position-absolute top-0 start-0 m-3">Хит</span>
+          <div class="card-body d-flex flex-column">
+            <p class="small text-body-secondary mb-1">Носимые устройства</p>
+            <h3 class="card-title h6"><a class="link-body-emphasis text-decoration-none product-card__link" href="product.html?id=9">Фитнес-браслет Fit Band</a></h3>
+            <p class="card-text small text-body-secondary">Шаги, сон, пульс и 14 дней без подзарядки.</p>
+            <p class="small mb-3"><span class="text-warning" aria-hidden="true">★</span> 4,7 <span class="text-body-secondary">· 412 отзывов</span></p>
+            <div class="mt-auto d-flex align-items-baseline gap-2 mb-3">
+              <span class="fs-5 fw-bold">2 790 ₽</span>
+            </div>
+            <div class="d-flex gap-2">
+              <button class="btn btn-primary flex-grow-1 js-add-to-cart" type="button" data-product-id="9">В корзину</button>
+              <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#quickOrderModal" data-product-id="9">Заказать</button>
+            </div>
+          </div>
+        </article>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer border-top mt-5 pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <a class="d-inline-flex align-items-center gap-2 fw-bold fs-5 link-body-emphasis text-decoration-none mb-2" href="index.html">
+            <img src="images/favicon.svg" alt="" width="28" height="28"> TechNest
+          </a>
+          <p class="text-body-secondary small mb-0">
+            Учебный интернет-магазин гаджетов. Контрольная работа №2 по дисциплине
+            «Фронтенд и бэкенд разработка»: интерфейс на Bootstrap 5.
+          </p>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 offset-lg-2">
+          <h2 class="h6 text-uppercase text-body-secondary">Разделы</h2>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link px-0 py-1" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link px-0 py-1" href="catalog.html">Каталог</a></li>
+            <li class="nav-item"><a class="nav-link px-0 py-1" href="order.html">Заявка</a></li>
+            <li class="nav-item"><a class="nav-link px-0 py-1" href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-4">
+          <h2 class="h6 text-uppercase text-body-secondary">Контакты</h2>
+          <ul class="list-unstyled small mb-0">
+            <li class="mb-2 d-flex gap-2"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a class="link-body-emphasis" href="tel:+79000000000">+7 (900) 000-00-00</a></li>
+            <li class="mb-2 d-flex gap-2"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg> <a class="link-body-emphasis" href="mailto:info@technest.example">info@technest.example</a></li>
+            <li class="d-flex gap-2"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> г. Москва, учебный проект</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between gap-2 small text-body-secondary">
+        <p class="mb-0">&copy; 2026 TechNest. Учебный проект.</p>
+        <p class="mb-0">Попов Илья Сергеевич, ЭФБО-06-25</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Корзина: offcanvas, содержимое строит js/main.js -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+    <div class="offcanvas-header border-bottom">
+      <h2 class="offcanvas-title h5" id="cartOffcanvasLabel">Корзина</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+      <div class="alert alert-secondary js-cart-empty" role="status">
+        Корзина пока пуста. Добавьте товары из <a href="catalog.html" class="alert-link">каталога</a>.
+      </div>
+      <ul class="list-group list-group-flush mb-3 js-cart-items"></ul>
+      <div class="mt-auto js-cart-footer d-none">
+        <div class="d-flex justify-content-between align-items-baseline mb-3">
+          <span class="text-body-secondary">Итого:</span>
+          <span class="fs-4 fw-bold js-cart-total">0 ₽</span>
+        </div>
+        <div class="d-grid gap-2">
+          <a class="btn btn-primary btn-lg" href="order.html?from=cart">Оформить заявку</a>
+          <button class="btn btn-outline-danger js-cart-clear" type="button">Очистить корзину</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Модальное окно быстрого заказа -->
+  <div class="modal fade" id="quickOrderModal" tabindex="-1" aria-labelledby="quickOrderTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <form class="needs-validation" id="quickOrderForm" novalidate>
+          <div class="modal-header">
+            <h2 class="modal-title h5" id="quickOrderTitle">Быстрый заказ</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+          </div>
+          <div class="modal-body">
+            <div class="alert alert-success d-none js-quick-success" role="status"></div>
+
+            <div class="js-quick-fields">
+            <div class="d-flex align-items-center gap-3 p-3 rounded-3 bg-body-tertiary mb-3">
+              <img class="rounded-2 js-quick-image" src="images/products/headphones.svg" alt="" width="72" height="48">
+              <div>
+                <p class="fw-semibold mb-0 js-quick-name">Товар не выбран</p>
+                <p class="text-body-secondary small mb-0 js-quick-price"></p>
+              </div>
+            </div>
+            <input type="hidden" name="product" class="js-quick-product">
+
+            <div class="mb-3">
+              <label class="form-label" for="quickName">Имя</label>
+              <input class="form-control" id="quickName" name="name" type="text" autocomplete="given-name" minlength="2" required>
+              <div class="invalid-feedback">Введите имя (не короче 2 символов).</div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label" for="quickPhone">Телефон</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text">+7</span>
+                <input class="form-control" id="quickPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national"
+                       placeholder="(900) 000-00-00" pattern="\(\d{3}\) \d{3}-\d{2}-\d{2}" data-phone-mask required>
+                <div class="invalid-feedback">Введите номер в формате (900) 000-00-00.</div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label" for="quickQty">Количество</label>
+              <select class="form-select" id="quickQty" name="quantity">
+                <option value="1" selected>1 шт.</option>
+                <option value="2">2 шт.</option>
+                <option value="3">3 шт.</option>
+                <option value="4">4 шт.</option>
+                <option value="5">5 шт.</option>
+              </select>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" id="quickAgreement" name="agreement" type="checkbox" required>
+              <label class="form-check-label" for="quickAgreement">Я согласен на обработку персональных данных</label>
+              <div class="invalid-feedback">Без согласия заявку отправить нельзя.</div>
+            </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary js-quick-cancel" data-bs-dismiss="modal">Отмена</button>
+            <button type="submit" class="btn btn-primary js-quick-submit">Отправить заявку</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Всплывающие уведомления -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div class="toast align-items-center border-0" id="appToast" role="status" aria-live="polite" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body js-toast-text">Готово</div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+      </div>
+    </div>
+  </div>
+
+  <button class="btn btn-primary btn-icon to-top js-to-top" type="button" aria-label="Наверх">
+    <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/product.js"></script>
+</body>
+</html>

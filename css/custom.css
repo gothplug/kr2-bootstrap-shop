@@ -1,0 +1,210 @@
+/*
+  custom.css — собственные стили проекта поверх Bootstrap 5.3.
+  Подключается ПОСЛЕ bootstrap.min.css, поэтому может уточнять его правила.
+  Здесь только то, чего нет в стандартных классах Bootstrap:
+  фон hero-блока, эффекты карточек, кнопка «Наверх», мелкие правки адаптивности.
+
+  Содержание:
+  1. Переменные проекта
+  2. Базовые правки
+  3. Шапка и иконки
+  4. Hero-блок и карусель
+  5. Карточки
+  6. Каталог
+  7. Заявка
+  8. Кнопка «Наверх»
+  9. Доступность: уменьшение анимаций
+*/
+
+/* 1. Переменные проекта */
+:root {
+  --shop-header-height: 4.5rem;
+  --shop-transition: 0.2s ease;
+  --shop-hover-shadow: 0 0.75rem 1.5rem rgba(15, 23, 42, 0.12);
+  --shop-hero-bg:
+    radial-gradient(circle at 15% 20%, rgba(13, 110, 253, 0.14), transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(111, 66, 193, 0.14), transparent 45%);
+  --shop-accent-gradient: linear-gradient(135deg, #0d6efd 0%, #6f42c1 100%);
+}
+
+[data-bs-theme="dark"] {
+  --shop-hover-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.45);
+  --shop-hero-bg:
+    radial-gradient(circle at 15% 20%, rgba(13, 110, 253, 0.25), transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(111, 66, 193, 0.25), transparent 45%);
+}
+
+/* 2. Базовые правки */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Якорные ссылки не прячутся под «липкой» шапкой */
+[id] {
+  scroll-margin-top: calc(var(--shop-header-height) + 1rem);
+}
+
+/* Утилита, которой нет в Bootstrap: позволяет text-truncate работать внутри flex */
+.min-w-0 {
+  min-width: 0;
+}
+
+/* 3. Шапка и иконки */
+.icon {
+  flex-shrink: 0;
+  vertical-align: -0.125em;
+}
+
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+}
+
+/* В светлой теме показываем луну, в тёмной — солнце */
+.theme-icon--sun,
+[data-bs-theme="dark"] .theme-icon--moon {
+  display: none;
+}
+
+[data-bs-theme="dark"] .theme-icon--sun {
+  display: inline-block;
+}
+
+/* 4. Hero-блок и карусель */
+.hero {
+  background: var(--shop-hero-bg);
+}
+
+.hero-carousel {
+  border-radius: var(--bs-border-radius-xl);
+  overflow: hidden;
+}
+
+.hero-carousel__caption {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 3rem 1.5rem 2.5rem;
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.75), transparent);
+}
+
+/* 5. Карточки */
+.product-card,
+.category-card {
+  transition: transform var(--shop-transition), box-shadow var(--shop-transition);
+}
+
+.product-card:hover,
+.category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shop-hover-shadow) !important;
+}
+
+.product-card__media {
+  display: block;
+  overflow: hidden;
+  border-top-left-radius: var(--bs-card-inner-border-radius);
+  border-top-right-radius: var(--bs-card-inner-border-radius);
+}
+
+.product-card__media img {
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-card__media img {
+  transform: scale(1.05);
+}
+
+/* Бейджи лежат поверх изображения */
+.product-card > .badge {
+  z-index: 1;
+}
+
+.product-card__link:hover {
+  color: var(--bs-primary) !important;
+}
+
+.feature-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  color: var(--bs-primary);
+  background-color: var(--bs-primary-bg-subtle);
+}
+
+.subscribe-card {
+  background: var(--shop-accent-gradient);
+}
+
+/* 6. Каталог */
+@media (min-width: 992px) {
+  /* На широком экране фильтры «прилипают» при прокрутке */
+  .catalog-filters {
+    position: sticky;
+    top: calc(var(--shop-header-height) + 1rem);
+  }
+}
+
+.filter-chip .btn-close {
+  width: 0.5em;
+  height: 0.5em;
+  padding: 0.25em;
+}
+
+.cart-qty {
+  width: auto;
+}
+
+/* 7. Заявка */
+.order-summary {
+  top: calc(var(--shop-header-height) + 1rem);
+  z-index: 1;
+}
+
+.delivery-option {
+  white-space: normal;
+}
+
+/* 8. Кнопка «Наверх» */
+.to-top {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 1030;
+  border-radius: 50%;
+  box-shadow: var(--bs-box-shadow);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(1rem);
+  transition: opacity var(--shop-transition), transform var(--shop-transition), visibility var(--shop-transition);
+}
+
+.to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+/* 9. Доступность: если в системе отключены анимации, убираем их и на сайте */
+@media (prefers-reduced-motion: reduce) {
+  .product-card,
+  .category-card,
+  .product-card__media img,
+  .to-top {
+    transition: none;
+  }
+
+  .product-card:hover,
+  .category-card:hover,
+  .product-card:hover .product-card__media img {
+    transform: none;
+  }
+}
