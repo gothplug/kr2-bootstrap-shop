@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-label="Внешний аккумулятор">
+  <title>Внешний аккумулятор</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fef9c3"/>
+      <stop offset="1" stop-color="#fde68a"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <circle cx="520" cy="70" r="90" fill="#ffffff" opacity=".25"/>
+  <circle cx="70" cy="350" r="70" fill="#ffffff" opacity=".2"/>
+  <ellipse cx="300" cy="345" rx="170" ry="16" fill="#0f172a" opacity=".12"/>
+
+  <rect x="215" y="80" width="170" height="250" rx="30" fill="#1e293b"/>
+  <rect x="270" y="70" width="60" height="16" rx="6" fill="#334155"/>
+  <polygon points="312,130 255,215 295,215 282,280 345,190 305,190" fill="#facc15"/>
+  <circle cx="262" cy="305" r="6" fill="#22c55e"/>
+  <circle cx="286" cy="305" r="6" fill="#22c55e"/>
+  <circle cx="310" cy="305" r="6" fill="#22c55e"/>
+  <circle cx="334" cy="305" r="6" fill="#475569"/>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-label="USB-C хаб 7 в 1">
+  <title>USB-C хаб 7 в 1</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e0f2fe"/>
+      <stop offset="1" stop-color="#bae6fd"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <circle cx="520" cy="70" r="90" fill="#ffffff" opacity=".25"/>
+  <circle cx="70" cy="350" r="70" fill="#ffffff" opacity=".2"/>
+  <ellipse cx="300" cy="345" rx="170" ry="16" fill="#0f172a" opacity=".12"/>
+
+  <path d="M150 205 C90 205 90 300 60 330" fill="none" stroke="#475569" stroke-width="14" stroke-linecap="round"/>
+  <rect x="150" y="160" width="320" height="90" rx="28" fill="#64748b"/>
+  <rect x="150" y="160" width="320" height="30" rx="15" fill="#94a3b8"/>
+  <rect x="190" y="196" width="24" height="12" rx="3" fill="#0f172a"/>
+  <rect x="228" y="196" width="24" height="12" rx="3" fill="#0f172a"/>
+  <rect x="266" y="196" width="24" height="12" rx="3" fill="#0f172a"/>
+  <rect x="304" y="196" width="24" height="12" rx="3" fill="#0f172a"/>
+  <rect x="342" y="196" width="24" height="12" rx="3" fill="#0f172a"/>
+  <rect x="380" y="196" width="24" height="12" rx="3" fill="#0f172a"/>
+  <circle cx="440" cy="225" r="6" fill="#38bdf8"/>
+</svg>
