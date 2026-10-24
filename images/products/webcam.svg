@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-label="Веб-камера">
+  <title>Веб-камера</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fce7f3"/>
+      <stop offset="1" stop-color="#fbcfe8"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <circle cx="520" cy="70" r="90" fill="#ffffff" opacity=".25"/>
+  <circle cx="70" cy="350" r="70" fill="#ffffff" opacity=".2"/>
+  <ellipse cx="300" cy="345" rx="170" ry="16" fill="#0f172a" opacity=".12"/>
+
+  <path d="M260 265 L240 325 H360 L340 265 Z" fill="#475569"/>
+  <rect x="215" y="318" width="170" height="16" rx="8" fill="#334155"/>
+  <circle cx="300" cy="170" r="100" fill="#1f2937"/>
+  <circle cx="300" cy="170" r="62" fill="#111827"/>
+  <circle cx="300" cy="170" r="42" fill="#be185d"/>
+  <circle cx="300" cy="170" r="20" fill="#0f172a"/>
+  <circle cx="286" cy="156" r="8" fill="#fbcfe8" opacity=".8"/>
+  <circle cx="370" cy="105" r="7" fill="#22c55e"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-label="Фитнес-браслет">
+  <title>Фитнес-браслет</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ecfccb"/>
+      <stop offset="1" stop-color="#d9f99d"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <circle cx="520" cy="70" r="90" fill="#ffffff" opacity=".25"/>
+  <circle cx="70" cy="350" r="70" fill="#ffffff" opacity=".2"/>
+  <ellipse cx="300" cy="345" rx="170" ry="16" fill="#0f172a" opacity=".12"/>
+
+  <ellipse cx="300" cy="200" rx="150" ry="110" fill="none" stroke="#3f6212" stroke-width="36"/>
+  <rect x="215" y="150" width="170" height="100" rx="34" fill="#1a2e05"/>
+  <rect x="230" y="163" width="140" height="74" rx="24" fill="#65a30d"/>
+  <path d="M245 205 H275 L287 182 L302 225 L315 195 L325 205 H355" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-label="Умные часы">
+  <title>Умные часы</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d1fae5"/>
+      <stop offset="1" stop-color="#a7f3d0"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <circle cx="520" cy="70" r="90" fill="#ffffff" opacity=".25"/>
+  <circle cx="70" cy="350" r="70" fill="#ffffff" opacity=".2"/>
+  <ellipse cx="300" cy="345" rx="170" ry="16" fill="#0f172a" opacity=".12"/>
+
+  <rect x="262" y="40" width="76" height="320" rx="22" fill="#334155"/>
+  <rect x="220" y="110" width="160" height="180" rx="40" fill="#0f172a"/>
+  <rect x="236" y="126" width="128" height="148" rx="28" fill="#059669"/>
+  <rect x="380" y="170" width="12" height="40" rx="5" fill="#475569"/>
+  <text x="300" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#ffffff">12:30</text>
+  <rect x="256" y="225" width="88" height="8" rx="4" fill="#6ee7b7"/>
+  <rect x="256" y="241" width="56" height="8" rx="4" fill="#a7f3d0"/>
+</svg>

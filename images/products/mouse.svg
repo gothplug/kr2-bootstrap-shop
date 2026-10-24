@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-label="Беспроводная мышь">
+  <title>Беспроводная мышь</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ccfbf1"/>
+      <stop offset="1" stop-color="#99f6e4"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <circle cx="520" cy="70" r="90" fill="#ffffff" opacity=".25"/>
+  <circle cx="70" cy="350" r="70" fill="#ffffff" opacity=".2"/>
+  <ellipse cx="300" cy="345" rx="170" ry="16" fill="#0f172a" opacity=".12"/>
+
+  <rect x="235" y="80" width="130" height="245" rx="65" fill="#0f766e"/>
+  <path d="M300 80 V170" stroke="#134e4a" stroke-width="4"/>
+  <path d="M235 170 H365" stroke="#134e4a" stroke-width="4"/>
+  <rect x="292" y="105" width="16" height="40" rx="8" fill="#5eead4"/>
+  <circle cx="300" cy="270" r="9" fill="#2dd4bf" opacity=".7"/>
+</svg>

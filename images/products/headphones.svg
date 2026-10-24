@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-label="Беспроводные наушники">
+  <title>Беспроводные наушники</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dbeafe"/>
+      <stop offset="1" stop-color="#bfdbfe"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <circle cx="520" cy="70" r="90" fill="#ffffff" opacity=".25"/>
+  <circle cx="70" cy="350" r="70" fill="#ffffff" opacity=".2"/>
+  <ellipse cx="300" cy="345" rx="170" ry="16" fill="#0f172a" opacity=".12"/>
+
+  <path d="M190 235 A110 110 0 0 1 410 235" fill="none" stroke="#1e293b" stroke-width="22" stroke-linecap="round"/>
+  <rect x="160" y="215" width="70" height="115" rx="30" fill="#2563eb"/>
+  <rect x="370" y="215" width="70" height="115" rx="30" fill="#2563eb"/>
+  <rect x="210" y="232" width="24" height="80" rx="12" fill="#1e3a8a"/>
+  <rect x="366" y="232" width="24" height="80" rx="12" fill="#1e3a8a"/>
+  <circle cx="195" cy="272" r="10" fill="#93c5fd"/>
+</svg>
