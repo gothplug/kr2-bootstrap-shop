@@ -98,8 +98,9 @@
     </div>
 
     <div class="row g-4">
-      <!-- Фильтры: на широком экране — колонка, на узком — выезжающая панель (offcanvas-lg) -->
-      <aside class="col-12 col-lg-3">
+      <!-- Фильтры: на широком экране — колонка, на узком — выезжающая панель (offcanvas-lg).
+           mt-0 убирает пустой отступ g-4 на телефоне, где колонка фильтров скрыта. -->
+      <aside class="col-12 col-lg-3 mt-0 mt-lg-4">
         <div class="offcanvas-lg offcanvas-start catalog-filters" tabindex="-1" id="filtersOffcanvas" aria-labelledby="filtersTitle">
           <div class="offcanvas-header border-bottom">
             <h2 class="offcanvas-title h5" id="filtersTitle">Фильтры</h2>
